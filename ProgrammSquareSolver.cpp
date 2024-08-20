@@ -87,7 +87,7 @@ int solve_square_func(double a, double b, double c, double* x1, double* x2)
 }
 
 
-
+// TODO: add doxygen docs
 bool reading_cooficients(double* a, double* b, double* c)
 {
 
