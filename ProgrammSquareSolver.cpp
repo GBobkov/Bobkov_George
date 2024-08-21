@@ -6,7 +6,7 @@
 
 
 const int inf_roots = -1;
-const double proximity_pozitive_null = 0.000000001;
+const double proximity_pozitive_null = 0.0000001;
 
 int solve_square_func(double a, double b, double c, double* x1, double* x2);
 
@@ -19,7 +19,7 @@ int test_of_solver(struct example_for_test test);
 void error(int out_n_roots, double out_x1, double out_x2,
             int expctd_n_roots, double expct_x1, double expctd_x2);
 
-
+bool check_solver_by_tests(void);
 struct example_for_test
 {
     int n_of_test;
@@ -37,12 +37,21 @@ struct example_for_test tests[] = {
       {2, 0, 1, 0, 1, 0, 0},
       {3, 0, 0, 1, 0, 0, 0},
       {4, 1, 1, 1, 0, 0, 0},
-      {5, 2, 3, 1, 0, 0, 0},
-      {6, 0, 0, 1, 0, 0, 0},
+      {5, 2, 3, 1, 2, 0.5, -1},
+      {6, 2, -5, 3, 2, 1.5, 1},
+      {7, 1, 2, 1, 1, -1, -1},
+      {8, 1.5, 3.33, -0.01, 2, 0.0029989517, -2.22299895178147},
+      {9, 0, 0.33, -0.2, 1, -0.2/0.33, -0.2/0.33},
+      {10, 1.0, 0., -4, 2, -2, -2},
+      {11, 1.0, 0, 4, 0, 0, 0},
+      {12, 0, 2, 1, 1, -0.5, -0.5},
+      {13, 2, 1, 0, 2, -0.5, 0}
     };
 
 int main()
 {
+
+    assert(check_solver_by_tests());
 
     printf("Write down coeficients in format a b c:\n");
 
@@ -144,12 +153,13 @@ int test_of_solver(struct example_for_test test)
     int test_n_roots = 0;
     double x1 = 0, x2 = 0;
     test_n_roots = solve_square_func(test.a, test.b, test.c, &x1, &x2);
-    if (test_n_roots != test.n_roots || ~is_zero(x1 - test.root1) || ~is_zero(x2 - test.root2) )
+    if ((test_n_roots != test.n_roots) || (~is_zero(x1 - test.root1)) || (~is_zero(x2 - test.root2)) )
     {
 
         error(test_n_roots, x1, x2,
               test.n_roots, test.root1, test.root2);
-        printf("Params: a = %lg, b = %lg, c = %lg.", test.a, test.b, test.c);
+        printf("Params: a = %lg, b = %lg, c = %lg. Test %d.\n", test.a, test.b, test.c, test.n_of_test);
+
         return test.n_of_test;
     }
     return 0;
@@ -160,7 +170,23 @@ void error(int out_n_roots, double out_x1, double out_x2,
             int expctd_n_roots, double expct_x1, double expctd_x2)
 
 {
-    printf("Error! Expected: n_roots = %d, x1 = %lg, x2 = %lg\n"
-                   "Output:  n_roots = %d, x1 = %lg, x2 = %lg\n",expctd_n_roots, expct_x1,expctd_x2,
+    printf("Error!   Expected: n_roots = %d, x1 = %lg, x2 = %lg\n"
+                   "\t Output:  n_roots = %d, x1 = %lg, x2 = %lg\n",
+                   expctd_n_roots, expct_x1,expctd_x2,
                    out_n_roots, out_x1, out_x2);
+    printf("\n");
 }
+
+
+bool check_solver_by_tests(void)
+{
+    int flag = 0;
+    bool correct = true;
+    for (int i = 0; i < 13; i++)
+    {
+        flag = test_of_solver(tests[i]);
+        if (flag) correct = false;
+    }
+    return correct;
+}
+
