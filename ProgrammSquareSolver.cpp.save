@@ -23,9 +23,9 @@ void error(int out_n_roots, double out_x1, double out_x2,
 struct example_for_test
 {
     int n_of_test;
-
+    
     double a, b, c;
-
+    
     int n_roots;
     double root1, root2;
 };
@@ -39,7 +39,7 @@ struct example_for_test tests[] = {
       {4, 1, 1, 1, 0, 0, 0},
       {5, 2, 3, 1, 0, 0, 0},
       {6, 0, 0, 1, 0, 0, 0},
-    };
+    }
 
 int main()
 {
