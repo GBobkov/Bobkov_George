@@ -1,8 +1,10 @@
 # include <stdio.h>
 # include <assert.h>
-# include "basic func.cpp"
-int solve_square_func(double a, double b, double c, double* x1, double* x2);
-extern const int inf_roots = -1;
+# include <math.h>
+# include "solver_func.h"
+# include "basic_func.h"
+
+
 
 int solve_square_func(double a, double b, double c, double* x1, double* x2)
 {

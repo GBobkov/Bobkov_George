@@ -1,19 +1,45 @@
 # depslib dependency file v1.0
-1724248933 source:c:\users\bobko\projects codeblock\squaresolverproject\programmsquaresolver.cpp
+1724258337 source:c:\users\bobko\projects codeblock\squaresolverproject\programmsquaresolver.cpp
 	<stdlib.h>
-	"testing program.cpp"
-
-1724248528 c:\users\bobko\projects codeblock\squaresolverproject\testing program.cpp
-	"solver_func.cpp"
-
-1724249587 c:\users\bobko\projects codeblock\squaresolverproject\solver_func.cpp
 	<stdio.h>
 	<assert.h>
-	"basic func.cpp"
+	<math.h>
+	"testing_program.h"
+	"solver_func.h"
+	"basic_func.h"
+
+1724257537 c:\users\bobko\projects codeblock\squaresolverproject\testing program.cpp
+
+1724257345 c:\users\bobko\projects codeblock\squaresolverproject\solver_func.cpp
+	<stdio.h>
+	<assert.h>
+	<math.h>
+	"solver_func.h"
+	"basic_func.h"
 
 1724249587 c:\users\bobko\projects codeblock\squaresolverproject\basic func.cpp
 	<math.h>
 
-1724248528 source:c:\users\bobko\projects codeblock\squaresolverproject\testing program.cpp
-	"solver_func.cpp"
+1724258859 source:c:\users\bobko\projects codeblock\squaresolverproject\testing program.cpp
+	"testing_program.h"
+	"solver_func.h"
+	"basic_func.h"
+	"stdio.h"
+
+1724258802 c:\users\bobko\projects codeblock\squaresolverproject\solver_func.h
+
+1724249805 c:\users\bobko\projects codeblock\squaresolverproject\basic_func.h
+
+1724256799 source:c:\users\bobko\projects codeblock\squaresolverproject\basic func.cpp
+	<math.h>
+	"basic_func.h"
+
+1724258758 source:c:\users\bobko\projects codeblock\squaresolverproject\solver_func.cpp
+	<stdio.h>
+	<assert.h>
+	<math.h>
+	"solver_func.h"
+	"basic_func.h"
+
+1724258859 c:\users\bobko\projects codeblock\squaresolverproject\testing_program.h
 

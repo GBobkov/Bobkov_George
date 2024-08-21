@@ -1,12 +1,12 @@
-#include "solver_func.cpp"
+# include "testing_program.h"
+# include "solver_func.h"
+# include "basic_func.h"
+# include "stdio.h"
 
 
-extern int test_solver(struct example_for_test test);
 
-extern void error_of_test(int out_n_roots, double out_x1, double out_x2,
+static void error_of_test(int out_n_roots, double out_x1, double out_x2,
             int expctd_n_roots, double expct_x1, double expctd_x2);
-
-extern bool check_solver_by_tests(void);
 
 struct example_for_test
 {
@@ -19,7 +19,7 @@ struct example_for_test
 };
 
 
-extern const struct example_for_test tests[] = {
+const struct example_for_test tests[] = {
     // n, a, b, c, r, x1, x2
       {1, 0, 0, 0, inf_roots, 0, 0},
       {2, 0, 1, 0, 1, 0, 0},
@@ -38,7 +38,7 @@ extern const struct example_for_test tests[] = {
 
 
 
-extern int test_solver(struct example_for_test test)
+int test_solver(struct example_for_test test)
 {
     int test_n_roots = 0;
     double x1 = 0, x2 = 0;
@@ -56,7 +56,7 @@ extern int test_solver(struct example_for_test test)
 }
 
 
-extern void error_of_test(int out_n_roots, double out_x1, double out_x2,
+void error_of_test(int out_n_roots, double out_x1, double out_x2,
             int expctd_n_roots, double expct_x1, double expctd_x2)
 
 {
@@ -67,7 +67,7 @@ extern void error_of_test(int out_n_roots, double out_x1, double out_x2,
 }
 
 
-extern bool check_solver_by_tests(void)
+bool check_solver_by_tests(void)
 {
     int flag = 0;
     bool correct = true;

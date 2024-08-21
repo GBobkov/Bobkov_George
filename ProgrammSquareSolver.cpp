@@ -1,5 +1,10 @@
 # include <stdlib.h>
-# include "testing program.cpp"
+# include <stdio.h>
+# include <assert.h>
+# include <math.h>
+# include "testing_program.h"
+# include "solver_func.h"
+# include "basic_func.h"
 
 
 bool reading_cooficients(double* a, double* b, double* c);
@@ -12,7 +17,7 @@ int main()
 
     assert(check_solver_by_tests());
 
-    printf("Write down coeficients in format a b c:\n");
+    printf("Write down coefficients in format a b c:\n");
 
     double a = 0, b = 0, c = 0;
 
