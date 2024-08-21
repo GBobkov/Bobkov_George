@@ -1,0 +1,9 @@
+#include <math.h>
+
+#include "basic_func.h"
+
+
+int is_zero(double x)
+{
+    return  fabs(x) < proximity_pozitive_null;
+}
