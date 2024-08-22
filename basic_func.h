@@ -3,5 +3,5 @@
 
 extern const double proximity_pozitive_null;
 int is_zero(double x);
-
+void clean_reading_boofer(void);
 #endif

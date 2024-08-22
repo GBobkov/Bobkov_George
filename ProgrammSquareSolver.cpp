@@ -83,12 +83,7 @@ bool reading_cooficients_from_terminal(double* a, double* b, double* c)
         printf("Wrong input! Try again!\n");
         printf("Write down coeficients in format a b c:\n");
 
-        int clean = getchar();
-        while (clean != '\n')
-        {
-            clean = getchar();
-            if (clean == EOF) return true;
-        }
+        clean_reading_boofer();
     }
 
     return false;

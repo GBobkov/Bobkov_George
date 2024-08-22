@@ -105,7 +105,7 @@ bool reading_coeficients_from_file_to_struct(FILE *ptr_f)
 
     while (true)
     {
-        if (fscanf(ptr_f, "%d %lg %lg %lg %d %lg %lg\n" ,&n, &a, &b, &c, &r, &x1, &x2) != 7)
+        if (fscanf(ptr_f, "%d %lg %lg %lg %d %lg %lg" ,&n, &a, &b, &c, &r, &x1, &x2) != 7)
         {
             int sym = getc(ptr_f);
             if (sym == EOF)
@@ -117,7 +117,7 @@ bool reading_coeficients_from_file_to_struct(FILE *ptr_f)
             printf("Wrong input from file in line = %d.", last_test - 12);
             exit(1);
         }
-
+        clean_reading_boofer();
         tests[last_test++] = {n, a,b,c,r,x1,x2};
 
 
