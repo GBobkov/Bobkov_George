@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1724341765 source:c:\users\bobko\projects codeblock\squaresolverproject\programmsquaresolver.cpp
+1724344348 source:c:\users\bobko\projects codeblock\squaresolverproject\programmsquaresolver.cpp
 	<stdlib.h>
 	<stdio.h>
 	<string.h>
@@ -51,11 +51,11 @@
 1724338773 c:\users\bobko\projects codeblock\squaresolverproject\my_assert.h
 	<stdlib.h>
 
-1724342134 c:\users\bobko\projects codeblock\squaresolverproject\colorful_print.h
+1724344320 c:\users\bobko\projects codeblock\squaresolverproject\colorful_print.h
 	<windows.h>
 	<stdio.h>
 
-1724342106 source:c:\users\bobko\projects codeblock\squaresolverproject\colorful_print.cpp
+1724343766 source:c:\users\bobko\projects codeblock\squaresolverproject\colorful_print.cpp
 	"colorful_print.h"
 
 1724342106 c:\users\bobko\projects codeblock\squaresolverproject\colorful_print.cpp

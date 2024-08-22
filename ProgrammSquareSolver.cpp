@@ -50,23 +50,23 @@ int main(int argc, char **argv)
 
     switch (n_roots)
     {
-        case 0: change_consol_color("red");
+        case 0: change_consol_color(COLOR_RED);
                 printf("There is no roots!");
                 break;
-        case 1: change_consol_color("green");
+        case 1: change_consol_color(COLOR_GREEN);
                 printf("There is one root: %lg.", x1);
                 break;
-        case 2: change_consol_color("blue");
+        case 2: change_consol_color(COLOR_BLUE);
                 printf("There are two roots: %lg, %lg.", x1, x2);
                 break;
-        case inf_roots: change_consol_color("purple");
+        case inf_roots: change_consol_color(COLOR_PURPLE);
                         printf("There are infinity roots!");
                         break;
-        default:    change_consol_color("orange");
+        default:    change_consol_color(COLOR_ORANGE);
                     printf("Error: nRoots = %d", n_roots);
     }
 
-    change_consol_color("white");
+    change_consol_color(COLOR_WHITE);
 
     return 0;
 }

@@ -3,6 +3,9 @@
 
 # include <windows.h>
 # include <stdio.h>
-void change_consol_color(char mode);
+
+enum colors {COLOR_PURPLE = 1, COLOR_GREEN, COLOR_BLUE, COLOR_RED, }
+void change_consol_color(char* mode);
+int color_mode(char *mode);
 
 #endif
