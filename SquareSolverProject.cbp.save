@@ -33,6 +33,7 @@
 		</Compiler>
 		<Unit filename="ProgrammSquareSolver.cpp" />
 		<Unit filename="basic func.cpp" />
+		<Unit filename="colorful_print.cpp" />
 		<Unit filename="solver_func.cpp" />
 		<Unit filename="solver_func.h">
 			<Option target="&lt;{~None~}&gt;" />

@@ -1,22 +1,47 @@
 # include <stdlib.h>
-# include "testing program.cpp"
+# include <stdio.h>
+# include <string.h>
+#include "my_assert.h"
+# include <math.h>
+# include "testing_program.h"
+# include "solver_func.h"
+# include "basic_func.h"
+# include "colorful_print.h"
 
 
-bool reading_cooficients(double* a, double* b, double* c);
+bool reading_cooficients_from_terminal(double* a, double* b, double* c);
 
 
 
-
-int main()
+int main(int argc, char **argv)
 {
 
-    assert(check_solver_by_tests());
 
-    printf("Write down coeficients in format a b c:\n");
+    if (argc >= 2)
+    {
+        if (strcmp(argv[1], "-t") == 0)
+        {
+
+            FILE *fp;
+            fp = fopen("../../data.txt","r");
+            reading_coeficients_from_file_to_struct(fp);
+            assert(check_solver_by_tests());
+            printf("All Tests are correctly!\n");
+        }
+        else
+        {
+            printf("Unsupportable command! Exit.");
+            return 1;
+        }
+
+    }
+    printf("Write down coefficients in format a b c:\n");
+
+
 
     double a = 0, b = 0, c = 0;
 
-    bool flag = reading_cooficients(&a, &b, &c);
+    bool flag = reading_cooficients_from_terminal(&a, &b, &c);
 
     if (flag) return 1;
 
@@ -25,30 +50,35 @@ int main()
 
     switch (n_roots)
     {
-        case 0: printf("There is no roots!");
+        case 0: change_consol_color("red");
+                printf("There is no roots!");
                 break;
-        case 1: printf("There is one root: %lg.", x1);
+        case 1: change_consol_color("green");
+                printf("There is one root: %lg.", x1);
                 break;
-        case 2: printf("There are two roots: %lg, %lg.", x1, x2);
+        case 2: change_consol_color("blue");
+                printf("There are two roots: %lg, %lg.", x1, x2);
                 break;
-        case inf_roots: printf("There are infinity roots!");
-                break;
+        case inf_roots: change_consol_color("purple");
+                        printf("There are infinity roots!");
+                        break;
         default: printf("Error: nRoots = %d", n_roots);
     }
 
+    return 0;
 }
 
 
 
 
 
-bool reading_cooficients(double* a, double* b, double* c)
+bool reading_cooficients_from_terminal(double* a, double* b, double* c)
 {
 
     while (scanf("%lg %lg %lg", a, b, c) != 3)
     {
         printf("Wrong input! Try again!\n");
-        printf("Write down cooficients in format a b c:\n");
+        printf("Write down coeficients in format a b c:\n");
 
         int clean = getchar();
         while (clean != '\n')

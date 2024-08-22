@@ -35,7 +35,7 @@ int solve_square_func(double a, double b, double c, double* x1, double* x2)
 
     if (is_zero(d))
     {
-        *x1 = *x2 = -c / b;
+        *x1 = *x2 = -b / (2 * a);
         return 1;
     }
 
