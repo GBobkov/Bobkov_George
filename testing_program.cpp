@@ -8,11 +8,32 @@
 
 
 
+//! @brief      if one test is wrong function print comment
+//!
+//! @param  int out_n_roots[in]
+//! @param  double out_x1[in]
+//! @param  double out_x2[in]
+//! @param  int expctd_n_roots[in]
+//! @param  double expct_x1[in]
+//! @param  double expctd_x2[in]
+//! @return void
+//!
+//!
 static void error_of_test(int out_n_roots, double out_x1, double out_x2,
             int expctd_n_roots, double expct_x1, double expctd_x2);
 
 
-struct example_for_test
+
+
+//! @brief struct contains tests information
+//! @param  int n_of_test       number of test
+//! @param  double a, b, c      params in equal
+//! @param  int n_roots         amount of roots
+//! @param  double root1, root2 roots (0 without change)
+//! @param
+//!
+//!
+static struct example_for_test
 {
     int n_of_test;
 
@@ -25,7 +46,7 @@ struct example_for_test
 
 
 
-struct example_for_test tests[100] = {
+static struct example_for_test tests[100] = {
     // n, a, b, c, r, x1, x2
       {1, 0, 0, 0, inf_roots, 0, 0},
       {2, 0, 1, 0, 1, 0, 0},
@@ -44,7 +65,12 @@ struct example_for_test tests[100] = {
 static int last_test = 13;
 
 
-int test_solver(struct example_for_test test)
+//! @brief  function which get struct of tests and put them in solve_square_func()
+//! @param                  test[in] struct example_for_test
+//! @return int             0 if test is correct else number of incorrect test
+//!
+//!
+static int test_solver(struct example_for_test test)
 {
 
 
@@ -67,7 +93,19 @@ int test_solver(struct example_for_test test)
 }
 
 
-void error_of_test(int out_n_roots, double out_x1, double out_x2,
+//! @brief          function print error
+//!
+
+//!int out_n_roots[in]
+//!double out_x1[in]
+//!double out_x2[in]
+//!int expctd_n_roots[in]
+//!double expct_x1[in]
+//!double expctd_x2[in]
+//! @return void
+//!
+//!
+static void error_of_test(int out_n_roots, double out_x1, double out_x2,
             int expctd_n_roots, double expct_x1, double expctd_x2)
 
 {
@@ -80,6 +118,12 @@ void error_of_test(int out_n_roots, double out_x1, double out_x2,
 }
 
 
+//! @brief      function start checking by all tests
+//!
+//! @param void
+//! @return bool  true if all tests are correct
+//!
+//!
 bool check_solver_by_tests(void)
 {
     int flag = 0;
@@ -95,7 +139,13 @@ bool check_solver_by_tests(void)
 
 
 
-bool reading_coeficients_from_file_to_struct(FILE *ptr_f)
+//! @brief          function reads tests from file to struct
+//!
+//! @param          ptr_f FILE*[in]
+//! @return bool    true if reading is success
+//!
+//!
+static bool reading_coeficients_from_file_to_struct(FILE *ptr_f)
 {
                         // n, a, b, c, r, x1, x2
     int n = 1;

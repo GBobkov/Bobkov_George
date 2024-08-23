@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1724344635 source:c:\users\bobko\projects codeblock\squaresolverproject\programmsquaresolver.cpp
+1724357630 source:c:\users\bobko\projects codeblock\squaresolverproject\programmsquaresolver.cpp
 	<stdlib.h>
 	<stdio.h>
 	<string.h>
@@ -22,7 +22,7 @@
 1724249587 c:\users\bobko\projects codeblock\squaresolverproject\basic func.cpp
 	<math.h>
 
-1724344655 source:c:\users\bobko\projects codeblock\squaresolverproject\testing program.cpp
+1724403942 source:c:\users\bobko\projects codeblock\squaresolverproject\testing program.cpp
 	<stdio.h>
 	<stdlib.h>
 	"testing_program.h"
@@ -34,7 +34,7 @@
 
 1724344612 c:\users\bobko\projects codeblock\squaresolverproject\basic_func.h
 
-1724344582 source:c:\users\bobko\projects codeblock\squaresolverproject\basic func.cpp
+1724403421 source:c:\users\bobko\projects codeblock\squaresolverproject\basic func.cpp
 	<math.h>
 	<stdio.h>
 	"basic_func.h"
@@ -51,11 +51,11 @@
 1724338773 c:\users\bobko\projects codeblock\squaresolverproject\my_assert.h
 	<stdlib.h>
 
-1724344530 c:\users\bobko\projects codeblock\squaresolverproject\colorful_print.h
+1724403894 c:\users\bobko\projects codeblock\squaresolverproject\colorful_print.h
 	<windows.h>
 	<stdio.h>
 
-1724343766 source:c:\users\bobko\projects codeblock\squaresolverproject\colorful_print.cpp
+1724403968 source:c:\users\bobko\projects codeblock\squaresolverproject\colorful_print.cpp
 	"colorful_print.h"
 
 1724342106 c:\users\bobko\projects codeblock\squaresolverproject\colorful_print.cpp

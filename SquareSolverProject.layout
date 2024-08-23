@@ -1,77 +1,66 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
-	<ActiveTarget name="Release" />
-	<File name="testing_program.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<ActiveTarget name="Debug" />
+	<File name="colorful_print.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="217" topLine="0" />
+			<Cursor1 position="209" topLine="0" />
 		</Cursor>
-		<Folding>
-			<Collapse line="0" />
-		</Folding>
 	</File>
-	<File name="solver_func.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="704" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="9" />
-			<Collapse line="20" />
-			<Collapse line="22" />
-			<Collapse line="24" />
-			<Collapse line="36" />
-		</Folding>
-	</File>
-	<File name="ProgrammSquareSolver.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="864" topLine="28" />
-		</Cursor>
-		<Folding>
-			<Collapse line="31" />
-			<Collapse line="51" />
-			<Collapse line="78" />
-			<Collapse line="81" />
-		</Folding>
-	</File>
-	<File name="testing program.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2135" topLine="25" />
-		</Cursor>
-		<Folding>
-			<Collapse line="15" />
-			<Collapse line="27" />
-			<Collapse line="47" />
-			<Collapse line="54" />
-			<Collapse line="72" />
-			<Collapse line="98" />
-			<Collapse line="106" />
-			<Collapse line="108" />
-			<Collapse line="111" />
-		</Folding>
-	</File>
-	<File name="basic func.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="221" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="6" />
-			<Collapse line="11" />
-			<Collapse line="14" />
-		</Folding>
-	</File>
-	<File name="colorful_print.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="144" topLine="0" />
-		</Cursor>
-		<Folding>
-			<Collapse line="3" />
-		</Folding>
-	</File>
-	<File name="solver_func.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="solver_func.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="87" topLine="0" />
 		</Cursor>
 		<Folding>
 			<Collapse line="0" />
+		</Folding>
+	</File>
+	<File name="colorful_print.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="102" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="testing_program.h" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="217" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="solver_func.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="329" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="19" />
+			<Collapse line="30" />
+			<Collapse line="32" />
+			<Collapse line="34" />
+			<Collapse line="46" />
+		</Folding>
+	</File>
+	<File name="testing_program.cpp" open="1" top="1" tabpos="4" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="262" topLine="12" />
+		</Cursor>
+		<Folding>
+			<Collapse line="36" />
+			<Collapse line="73" />
+			<Collapse line="80" />
+			<Collapse line="148" />
+			<Collapse line="156" />
+			<Collapse line="158" />
+			<Collapse line="161" />
+		</Folding>
+	</File>
+	<File name="ProgrammSquareSolver.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="89" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="basic_func.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="441" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="11" />
 		</Folding>
 	</File>
 </CodeBlocks_layout_file>

@@ -9,10 +9,24 @@
 # include "colorful_print.h"
 
 
+//! @brief func which write number from user to pointer (input should be correct)
+//! @param a[in] double*  first coefficient in square equation
+//! @param b[in] double*  second coefficient in square equation
+//! @param c[in] double*  third coefficient in square equation
+//! @return bool True if read is reading is successfully.
+//!
+//!
 bool reading_cooficients_from_terminal(double* a, double* b, double* c);
 
 
 
+//! @brief main function
+//!
+//! @param argc int
+//! @param argv char**
+//! @return int 0 if else 1
+//!
+//!
 int main(int argc, char **argv)
 {
 
@@ -24,6 +38,7 @@ int main(int argc, char **argv)
 
             FILE *fp;
             fp = fopen("../../data.txt","r");
+            assert(fp != NULL);
             reading_coeficients_from_file_to_struct(fp);
             assert(check_solver_by_tests());
             printf("All Tests are correctly!\n");
@@ -65,6 +80,8 @@ int main(int argc, char **argv)
         default:    change_consol_color(COLOR_ORANGE);
                     printf("Error: nRoots = %d", n_roots);
     }
+
+
 
     change_consol_color(COLOR_WHITE);
 

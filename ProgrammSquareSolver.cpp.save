@@ -9,10 +9,25 @@
 # include "colorful_print.h"
 
 
+//! @brief func which write number from user to pointer (input should be correct)
+//!
+//! @param a[in] double*  first coefficient in square equation
+//! @param b[in] double*  second coefficient in square equation
+//! @param c[in] double*  third coefficient in square equation
+//! @return bool True if read is reading is accessfully.
+//!
+//!
 bool reading_cooficients_from_terminal(double* a, double* b, double* c);
 
 
 
+//! @brief main function
+//!
+//! @param argc int
+//! @param argv char**
+//! @return int
+//!
+//!
 int main(int argc, char **argv)
 {
 
@@ -24,6 +39,7 @@ int main(int argc, char **argv)
 
             FILE *fp;
             fp = fopen("../../data.txt","r");
+            assert(fp != NULL);
             reading_coeficients_from_file_to_struct(fp);
             assert(check_solver_by_tests());
             printf("All Tests are correctly!\n");
@@ -50,20 +66,25 @@ int main(int argc, char **argv)
 
     switch (n_roots)
     {
-        case 0: change_consol_color("red");
+        case 0: change_consol_color(COLOR_RED);
                 printf("There is no roots!");
                 break;
-        case 1: change_consol_color("green");
+        case 1: change_consol_color(COLOR_GREEN);
                 printf("There is one root: %lg.", x1);
                 break;
-        case 2: change_consol_color("blue");
+        case 2: change_consol_color(COLOR_BLUE);
                 printf("There are two roots: %lg, %lg.", x1, x2);
                 break;
-        case inf_roots: change_consol_color("purple");
+        case inf_roots: change_consol_color(COLOR_PURPLE);
                         printf("There are infinity roots!");
                         break;
-        default: printf("Error: nRoots = %d", n_roots);
+        default:    change_consol_color(COLOR_ORANGE);
+                    printf("Error: nRoots = %d", n_roots);
     }
+
+
+
+    change_consol_color(COLOR_WHITE);
 
     return 0;
 }
@@ -80,12 +101,7 @@ bool reading_cooficients_from_terminal(double* a, double* b, double* c)
         printf("Wrong input! Try again!\n");
         printf("Write down coeficients in format a b c:\n");
 
-        int clean = getchar();
-        while (clean != '\n')
-        {
-            clean = getchar();
-            if (clean == EOF) return true;
-        }
+        clean_reading_boofer();
     }
 
     return false;

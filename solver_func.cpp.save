@@ -1,10 +1,21 @@
 # include <stdio.h>
 # include <assert.h>
-# include "basic func.cpp"
+# include <math.h>
+# include "solver_func.h"
 # include "basic_func.h"
-int solve_square_func(double a, double b, double c, double* x1, double* x2);
-extern const int inf_roots = -1;
 
+
+
+//! @brief 
+//!
+//! @param a double
+//! @param b double
+//! @param c double
+//! @param x1 double*
+//! @param x2 double*
+//! @return int
+//!
+//!
 int solve_square_func(double a, double b, double c, double* x1, double* x2)
 {
 
@@ -34,7 +45,7 @@ int solve_square_func(double a, double b, double c, double* x1, double* x2)
 
     if (is_zero(d))
     {
-        *x1 = *x2 = -c / b;
+        *x1 = *x2 = -b / (2 * a);
         return 1;
     }
 

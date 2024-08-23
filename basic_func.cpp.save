@@ -2,9 +2,15 @@
 #include <stdio.h>
 #include "basic_func.h"
 
-const double proximity_pozitive_null = 0.0000001;
+//! @brief double number can't be accuracy compared 
+//!
+//! @param x[in] double  
+//! @return int     1 if 
+//!
+//!
 int is_zero(double x)
 {
+    const double proximity_pozitive_null = 0.0000001;
     return  fabs(x) < proximity_pozitive_null;
 }
 

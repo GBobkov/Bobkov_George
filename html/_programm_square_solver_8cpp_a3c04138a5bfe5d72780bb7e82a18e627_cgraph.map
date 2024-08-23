@@ -1,0 +1,10 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title="main function" alt="" coords="5,115,56,141"/>
+<area shape="rect" id="node2" href="$colorful__print_8cpp.html#aded6364190dd2b3354258c088be6dc77" title="change color text in consol" alt="" coords="109,5,253,32"/>
+<area shape="rect" id="node3" href="$testing__program_8cpp.html#a4308193188c84f988dda329b70709534" title="function start checking by all tests" alt="" coords="104,56,259,83"/>
+<area shape="rect" id="node4" href="$testing__program_8h.html#a017e9d99e159175ab5f7db6015b5da88" title=" " alt="" coords="114,107,249,149"/>
+<area shape="rect" id="node5" href="$_programm_square_solver_8cpp.html#abc706996c066296fdd2972c7a1a4a546" title="func which write number from user to pointer (input should be correct)" alt="" coords="115,173,248,214"/>
+<area shape="rect" id="node7" href="$solver__func_8cpp.html#ab1ed38e718a255494f8fc2b07c68822d" title="function get parametrs and solve equal" alt="" coords="117,239,245,265"/>
+<area shape="rect" id="node6" href="$basic__func_8cpp.html#aab0515827284e6264d8841f0d5a8f873" title="function which clean buffer from symbols" alt="" coords="307,180,451,207"/>
+<area shape="rect" id="node8" href="$basic__func_8cpp.html#a064da5d066549d63a20d893fa2a1cd11" title="double number can&#39;t be accuracy compared" alt="" coords="347,239,411,265"/>
+</map>

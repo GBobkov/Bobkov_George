@@ -4,9 +4,9 @@
 # include <windows.h>
 # include <stdio.h>
 
-enum colors {COLOR_PURPLE = 1, COLOR_GREEN, COLOR_BLUE, COLOR_RED, COLOR_PINK,
+enum colors {COLOR_PURPLE = 1, COLOR_GREEN = 2, COLOR_BLUE = 3, COLOR_RED = 4, COLOR_PINK = 5,
             COLOR_ORANGE, COLOR_GRAY = 8, COLOR_YELLOW = 10, COLOR_WHITE = 15};
-void change_consol_color(int mode);
+void change_consol_color(colors mode);
 
 
 #endif

@@ -1,0 +1,23 @@
+.PHONY: all Release Debug  Clean
+
+all: ProgrammSquareSolver.exe
+
+Release: ProgrammSquareSolver.exe
+Debug: ProgrammSquareSolver.exe
+Clean: remove_obj_files.exe
+
+
+OBJFILES := testing_program.o solver_func.o ProgrammSquareSolver.o colorful_print.o basic_func.o
+DIROBJFILES := $(addprefix obj/tst/, $(OBJFILES) )
+
+ProgrammSquareSolver.exe : $(DIROBJFILES)
+	g++ $(DIROBJFILES) -o ProgrammSquareSolver.exe
+
+
+remove_obj_files.exe:
+	rm $(DIROBJFILES)
+
+
+obj/tst/%.o : %.cpp
+	g++ $< -c  -o $@
+
