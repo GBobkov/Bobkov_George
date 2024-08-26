@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['main_19',['main',['../_programm_square_solver_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'ProgrammSquareSolver.cpp']]],
-  ['my_5fassert_2eh_20',['my_assert.h',['../my__assert_8h.html',1,'']]]
+  ['is_5fzero_22',['is_zero',['../basic__func_8cpp.html#a064da5d066549d63a20d893fa2a1cd11',1,'is_zero(double x):&#160;basic_func.cpp'],['../basic__func_8h.html#a064da5d066549d63a20d893fa2a1cd11',1,'is_zero(double x):&#160;basic_func.cpp']]]
 ];

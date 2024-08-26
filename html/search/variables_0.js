@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['proximity_5fpozitive_5fnull_50',['proximity_pozitive_null',['../basic__func_8h.html#a9067a582fcbbaa4ff6b18395c0f1a22a',1,'basic_func.h']]]
+  ['a_57',['a',['../structexample__for__test.html#ad8dd8dd6cd243d603f8aea9bc8018783',1,'example_for_test']]]
 ];

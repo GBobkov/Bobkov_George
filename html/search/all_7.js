@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['solve_5fsquare_5ffunc_25',['solve_square_func',['../solver__func_8cpp.html#ab1ed38e718a255494f8fc2b07c68822d',1,'solve_square_func(double a, double b, double c, double *x1, double *x2):&#160;solver_func.cpp'],['../solver__func_8h.html#ab1ed38e718a255494f8fc2b07c68822d',1,'solve_square_func(double a, double b, double c, double *x1, double *x2):&#160;solver_func.cpp']]],
-  ['solver_5ffunc_2ecpp_26',['solver_func.cpp',['../solver__func_8cpp.html',1,'']]],
-  ['solver_5ffunc_2eh_27',['solver_func.h',['../solver__func_8h.html',1,'']]]
+  ['programmsquaresolver_2ecpp_27',['ProgrammSquareSolver.cpp',['../_programm_square_solver_8cpp.html',1,'']]],
+  ['proximity_5fpozitive_5fnull_28',['proximity_pozitive_null',['../basic__func_8h.html#a9067a582fcbbaa4ff6b18395c0f1a22a',1,'basic_func.h']]]
 ];

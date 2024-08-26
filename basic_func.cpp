@@ -10,7 +10,7 @@
 //!
 int is_zero(double x)
 {
-    const double proximity_pozitive_null = 0.0000001;
+    double proximity_pozitive_null = 0.0000001;
     return  fabs(x) < proximity_pozitive_null;
 }
 
@@ -32,4 +32,5 @@ void clean_reading_boofer(void)
         if (clean == EOF) return;
     }
 }
+
 

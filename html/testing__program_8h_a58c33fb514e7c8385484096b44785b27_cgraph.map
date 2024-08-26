@@ -1,0 +1,5 @@
+<map id="test_solver" name="test_solver">
+<area shape="rect" id="node1" title="function which get struct of tests and put them in solve_square_func()" alt="" coords="5,5,89,32"/>
+<area shape="rect" id="node2" href="$basic__func_8cpp.html#a064da5d066549d63a20d893fa2a1cd11" title="double number can&#39;t be accuracy compared" alt="" coords="313,5,377,32"/>
+<area shape="rect" id="node3" href="$solver__func_8cpp.html#ab1ed38e718a255494f8fc2b07c68822d" title="function get parametrs and solve equal" alt="" coords="137,31,265,57"/>
+</map>

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['programmsquaresolver_2ecpp_21',['ProgrammSquareSolver.cpp',['../_programm_square_solver_8cpp.html',1,'']]],
-  ['proximity_5fpozitive_5fnull_22',['proximity_pozitive_null',['../basic__func_8h.html#a9067a582fcbbaa4ff6b18395c0f1a22a',1,'basic_func.h']]]
+  ['main_23',['main',['../_programm_square_solver_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'ProgrammSquareSolver.cpp']]],
+  ['my_5fassert_2eh_24',['my_assert.h',['../my__assert_8h.html',1,'']]]
 ];

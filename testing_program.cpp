@@ -8,6 +8,7 @@
 
 
 
+
 //! @brief      if one test is wrong function print comment
 //!
 //! @param  int out_n_roots[in]
@@ -33,7 +34,7 @@ static void error_of_test(int out_n_roots, double out_x1, double out_x2,
 //! @param
 //!
 //!
-static struct example_for_test
+struct example_for_test
 {
     int n_of_test;
 
@@ -62,6 +63,8 @@ static struct example_for_test tests[100] = {
       {12, 0, 2, 1, 1, -0.5, -0.5},
       {13, 2, 1, 0, 2, -0.5, 0}
     };
+
+static int number_tests_in_struct = 13;
 static int last_test = 13;
 
 
@@ -70,7 +73,7 @@ static int last_test = 13;
 //! @return int             0 if test is correct else number of incorrect test
 //!
 //!
-static int test_solver(struct example_for_test test)
+extern int test_solver(struct example_for_test test)
 {
 
 
@@ -93,8 +96,7 @@ static int test_solver(struct example_for_test test)
 }
 
 
-//! @brief          function print error
-//!
+
 
 //!int out_n_roots[in]
 //!double out_x1[in]
@@ -139,13 +141,22 @@ bool check_solver_by_tests(void)
 
 
 
+//! @brief function stop program and write comment
+//!
+//! @param void
+//! @return void
+//!
+//!
+static bool error_of_reading_file(void);
+
+
 //! @brief          function reads tests from file to struct
 //!
 //! @param          ptr_f FILE*[in]
-//! @return bool    true if reading is success
+//! @return bool    true if reading is success false if not
 //!
 //!
-static bool reading_coeficients_from_file_to_struct(FILE *ptr_f)
+bool reading_coeficients_from_file_to_struct(FILE *ptr_f)
 {
                         // n, a, b, c, r, x1, x2
     int n = 1;
@@ -157,6 +168,8 @@ static bool reading_coeficients_from_file_to_struct(FILE *ptr_f)
     {
         if (fscanf(ptr_f, "%d %lg %lg %lg %d %lg %lg" ,&n, &a, &b, &c, &r, &x1, &x2) != 7)
         {
+
+
             int sym = getc(ptr_f);
             if (sym == EOF)
             {
@@ -164,20 +177,57 @@ static bool reading_coeficients_from_file_to_struct(FILE *ptr_f)
                 return true;
             }
 
-            printf("Wrong input from file in line = %d.", last_test - 12);
-            exit(1);
-        }
-        clean_reading_boofer();
-        tests[last_test++] = {n, a,b,c,r,x1,x2};
+            error_of_reading_file();
+            return false;
 
+
+        }
+
+        char last_c = getc(ptr_f);
+        while (last_c == ' ') last_c = getc(ptr_f);
+
+
+
+
+        if (last_c == EOF)
+        {
+            tests[last_test++] = {n, a, b, c, r, x1, x2};
+
+
+            fclose(ptr_f);
+            return true;
+        }
+
+
+        if (last_c != '\n') {error_of_reading_file(); return false;}
+
+        tests[last_test++] = {n, a,b,c,r,x1,x2};
 
 
     }
 
-    return false;
+}
 
+
+
+
+
+
+//! @brief          print error
+//!
+//! @param void
+//! @return void
+//!
+//!
+static bool error_of_reading_file(void)
+
+{
+    change_consol_color(COLOR_RED);
+    printf("Wrong input from file in line = %d.", last_test - number_tests_in_struct + 1);
+    change_consol_color(COLOR_WHITE);
 
 }
+
 
 
 

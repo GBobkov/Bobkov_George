@@ -1,37 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <BrowseTracker_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="colorful_print.cpp" open="0" top="0" tabpos="2">
-		<Cursor position="209" topLine="0" />
-		<BrowseMarks positions="30,77,169" />
+	<File name="testing_program.cpp" open="1" top="1" tabpos="4">
+		<Cursor position="880" topLine="31" />
+		<BrowseMarks positions="165,231,880,1754,1844,3058" />
+		<Book_Marks positions="" />
 	</File>
-	<File name="solver_func.h" open="1" top="0" tabpos="5">
-		<Cursor position="87" topLine="0" />
-	</File>
-	<File name="colorful_print.h" open="1" top="0" tabpos="6">
-		<Cursor position="331" topLine="0" />
+	<File name="colorful_print.h" open="0" top="0" tabpos="6">
+		<Cursor position="102" topLine="0" />
 		<BrowseMarks positions="198,321" />
-	</File>
-	<File name="testing_program.h" open="0" top="0" tabpos="7">
-		<Cursor position="217" topLine="0" />
-		<BrowseMarks positions="159" />
+		<Book_Marks positions="0" />
 	</File>
 	<File name="solver_func.cpp" open="1" top="0" tabpos="3">
-		<Cursor position="329" topLine="6" />
+		<Cursor position="329" topLine="0" />
 		<BrowseMarks positions="508,513" />
-	</File>
-	<File name="testing_program.cpp" open="1" top="1" tabpos="4">
-		<Cursor position="262" topLine="12" />
-		<BrowseMarks positions="165,231,1761,3065" />
 		<Book_Marks positions="" />
 	</File>
 	<File name="ProgrammSquareSolver.cpp" open="1" top="0" tabpos="1">
 		<Cursor position="89" topLine="0" />
-		<BrowseMarks positions="0,223,439,503,567,648" />
-		<Book_Marks positions="405,652" />
+		<BrowseMarks positions="0,223,439,503,567,648,225" />
+		<Book_Marks positions="405,652,225" />
 	</File>
-	<File name="basic_func.cpp" open="1" top="0" tabpos="2">
-		<Cursor position="441" topLine="0" />
-		<BrowseMarks positions="441" />
+	<File name="solver_func.h" open="0" top="0" tabpos="5">
+		<Cursor position="87" topLine="0" />
+	</File>
+	<File name="testing_program.h" open="0" top="0" tabpos="7">
+		<Cursor position="166" topLine="0" />
+		<BrowseMarks positions="159" />
+	</File>
+	<File name="basic_func.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="336" topLine="1" />
+		<BrowseMarks positions="438" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="colorful_print.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="209" topLine="0" />
+		<BrowseMarks positions="30,77,169" />
+		<Book_Marks positions="" />
 	</File>
 </BrowseTracker_layout_file>

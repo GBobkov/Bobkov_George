@@ -86,13 +86,12 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a58c33fb514e7c8385484096b44785b27"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testing__program_8h.html#a58c33fb514e7c8385484096b44785b27">test_solver</a> (struct example_for_test test)</td></tr>
+<tr class="memitem:a58c33fb514e7c8385484096b44785b27"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testing__program_8h.html#a58c33fb514e7c8385484096b44785b27">test_solver</a> (struct <a class="el" href="structexample__for__test.html">example_for_test</a> test)</td></tr>
+<tr class="memdesc:a58c33fb514e7c8385484096b44785b27"><td class="mdescLeft">&#160;</td><td class="mdescRight">function which get struct of tests and put them in <a class="el" href="solver__func_8cpp.html#ab1ed38e718a255494f8fc2b07c68822d" title="function get parametrs and solve equal">solve_square_func()</a>  <a href="testing__program_8h.html#a58c33fb514e7c8385484096b44785b27">More...</a><br /></td></tr>
 <tr class="separator:a58c33fb514e7c8385484096b44785b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4308193188c84f988dda329b70709534"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testing__program_8h.html#a4308193188c84f988dda329b70709534">check_solver_by_tests</a> (void)</td></tr>
 <tr class="memdesc:a4308193188c84f988dda329b70709534"><td class="mdescLeft">&#160;</td><td class="mdescRight">function start checking by all tests  <a href="testing__program_8h.html#a4308193188c84f988dda329b70709534">More...</a><br /></td></tr>
 <tr class="separator:a4308193188c84f988dda329b70709534"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a017e9d99e159175ab5f7db6015b5da88"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testing__program_8h.html#a017e9d99e159175ab5f7db6015b5da88">reading_coeficients_from_file_to_struct</a> (FILE *ptr_f)</td></tr>
-<tr class="separator:a017e9d99e159175ab5f7db6015b5da88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a4308193188c84f988dda329b70709534"></a>
@@ -122,24 +121,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a017e9d99e159175ab5f7db6015b5da88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a017e9d99e159175ab5f7db6015b5da88">&#9670;&nbsp;</a></span>reading_coeficients_from_file_to_struct()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool reading_coeficients_from_file_to_struct </td>
-          <td>(</td>
-          <td class="paramtype">FILE *&#160;</td>
-          <td class="paramname"><em>ptr_f</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a58c33fb514e7c8385484096b44785b27"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a58c33fb514e7c8385484096b44785b27">&#9670;&nbsp;</a></span>test_solver()</h2>
 
@@ -149,12 +130,31 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int test_solver </td>
           <td>(</td>
-          <td class="paramtype">struct example_for_test&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structexample__for__test.html">example_for_test</a>&#160;</td>
           <td class="paramname"><em>test</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>function which get struct of tests and put them in <a class="el" href="solver__func_8cpp.html#ab1ed38e718a255494f8fc2b07c68822d" title="function get parametrs and solve equal">solve_square_func()</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">test[in]</td><td>struct <a class="el" href="structexample__for__test.html" title="struct contains tests information">example_for_test</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int 0 if test is correct else number of incorrect test </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="testing__program_8h_a58c33fb514e7c8385484096b44785b27_cgraph.png" border="0" usemap="#atesting__program_8h_a58c33fb514e7c8385484096b44785b27_cgraph" alt=""/></div>
+<map name="atesting__program_8h_a58c33fb514e7c8385484096b44785b27_cgraph" id="atesting__program_8h_a58c33fb514e7c8385484096b44785b27_cgraph">
+<area shape="rect" title="function which get struct of tests and put them in solve_square_func()" alt="" coords="5,5,89,32"/>
+<area shape="rect" href="basic__func_8cpp.html#a064da5d066549d63a20d893fa2a1cd11" title="double number can&#39;t be accuracy compared" alt="" coords="313,5,377,32"/>
+<area shape="rect" href="solver__func_8cpp.html#ab1ed38e718a255494f8fc2b07c68822d" title="function get parametrs and solve equal" alt="" coords="137,31,265,57"/>
+</map>
+</div>
 
 </div>
 </div>

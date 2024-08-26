@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['reading_5fcoeficients_5ffrom_5ffile_5fto_5fstruct_23',['reading_coeficients_from_file_to_struct',['../testing__program_8h.html#a017e9d99e159175ab5f7db6015b5da88',1,'testing_program.h']]],
-  ['reading_5fcooficients_5ffrom_5fterminal_24',['reading_cooficients_from_terminal',['../_programm_square_solver_8cpp.html#abc706996c066296fdd2972c7a1a4a546',1,'ProgrammSquareSolver.cpp']]]
+  ['n_5fof_5ftest_25',['n_of_test',['../structexample__for__test.html#a7ee6b9dc37dd5956a531b12a3fd60548',1,'example_for_test']]],
+  ['n_5froots_26',['n_roots',['../structexample__for__test.html#a36370a71116ab7850db9a8aeba563805',1,'example_for_test']]]
 ];
