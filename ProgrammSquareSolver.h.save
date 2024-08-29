@@ -1,5 +1,5 @@
-#ifndef PROGRAMM_SQUARE_SOLVER_H
-#define PROGRAMM_SQUARE_SOLVER_H
+#ifndef SOLVER_FUNC_H_INCLUDED
+#define SOLVER_FUNC_H_INCLUDED
 
 
 
@@ -41,4 +41,4 @@ void print_answer(int roots_n, double x1, double x2);
 
 
 
-#endif // PROGRAMM_SQUARE_SOLVER_H
+#endif // SOLVER_FUNC_H_INCLUDED

@@ -26,6 +26,18 @@ static void error_of_test(int out_n_roots, double out_x1, double out_x2,
 
 
 
+//! @brief          function stop program and write comment if file data is wrong
+//!
+//! @param void
+//! @return void
+//!
+//!
+static void error_of_reading_file(void);
+
+
+
+
+
 //! @brief  struct contains tests data
 //! @param  int n_of_test           number of test
 //! @param  double a, b, c          params in equal
@@ -63,8 +75,24 @@ static struct example_for_test tests[100] = {
       {13, 2, 1, 0, 2, -0.5, 0}
     };
 
+//! @brief          amount tests in massive of structs
+//!
+//!
 static int number_tests_in_struct = 13;
+
+
+
+
+
+//! @brief          index of the next position in massive of structs
+//!
+//!
 static int last_test = 13;
+
+
+
+
+
 
 
 //! @brief  function which get struct of tests and put them in solve_square_func()
@@ -119,6 +147,8 @@ static void error_of_test(int out_n_roots, double out_x1, double out_x2,
 }
 
 
+
+
 //! @brief      function start checking by all tests
 //!
 //! @param void
@@ -140,14 +170,6 @@ bool check_solver_by_tests(void)
 
 
 
-//! @brief function stop program and write comment
-//!
-//! @param void
-//! @return void
-//!
-//!
-static bool error_of_reading_file(void);
-
 
 //! @brief          function reads tests from file to struct
 //!
@@ -157,11 +179,11 @@ static bool error_of_reading_file(void);
 //!
 bool reading_coeficients_from_file_to_struct(FILE *ptr_f)
 {
-                        // n, a, b, c, r, x1, x2
+    // n, a, b, c, r, x1, x2
     int n = 1;
-    double a = 0,b = 0,c = 0;
+    double a = 0, b = 0, c = 0;
     int r = 0;
-    double x1,x2;
+    double x1, x2;
 
     while (true)
     {
@@ -182,7 +204,7 @@ bool reading_coeficients_from_file_to_struct(FILE *ptr_f)
 
         }
 
-        char last_c = getc(ptr_f);
+        int last_c = getc(ptr_f);
         while (last_c == ' ') last_c = getc(ptr_f);
 
 
@@ -218,7 +240,7 @@ bool reading_coeficients_from_file_to_struct(FILE *ptr_f)
 //! @return void
 //!
 //!
-static bool error_of_reading_file(void)
+static void error_of_reading_file(void)
 
 {
     change_consol_color(COLOR_RED);

@@ -26,11 +26,23 @@ static void error_of_test(int out_n_roots, double out_x1, double out_x2,
 
 
 
+//! @brief          function stop program and write comment if file data is wrong
+//!
+//! @param void
+//! @return void
+//!
+//!
+static void error_of_reading_file(void);
+
+
+
+
+
 //! @brief  struct contains tests data
-//! @param  int n_of_test       number of test
-//! @param  double a, b, c      params in equal
-//! @param  int n_roots         amount of roots
-//! @param  double root1, root2 roots (0 without change)
+//! @param  int n_of_test           number of test
+//! @param  double a, b, c          params in equal
+//! @param  int n_roots             amount of roots
+//! @param  double root1, root2     it's roots (root1 = root2 = 0 if it's INF roots or no roots)
 //!
 //!
 struct example_for_test
@@ -63,8 +75,24 @@ static struct example_for_test tests[100] = {
       {13, 2, 1, 0, 2, -0.5, 0}
     };
 
+//! @brief          amount tests in massive of structs
+//!
+//!
 static int number_tests_in_struct = 13;
+
+
+
+
+
+//! @brief          index of the nex 
+//!
+//!
 static int last_test = 13;
+
+
+
+
+
 
 
 //! @brief  function which get struct of tests and put them in solve_square_func()
@@ -140,14 +168,6 @@ bool check_solver_by_tests(void)
 
 
 
-//! @brief function stop program and write comment
-//!
-//! @param void
-//! @return void
-//!
-//!
-static bool error_of_reading_file(void);
-
 
 //! @brief          function reads tests from file to struct
 //!
@@ -182,7 +202,7 @@ bool reading_coeficients_from_file_to_struct(FILE *ptr_f)
 
         }
 
-        char last_c = getc(ptr_f);
+        int last_c = getc(ptr_f);
         while (last_c == ' ') last_c = getc(ptr_f);
 
 
@@ -218,7 +238,7 @@ bool reading_coeficients_from_file_to_struct(FILE *ptr_f)
 //! @return void
 //!
 //!
-static bool error_of_reading_file(void)
+static void error_of_reading_file(void)
 
 {
     change_consol_color(COLOR_RED);

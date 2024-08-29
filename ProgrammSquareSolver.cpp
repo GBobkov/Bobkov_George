@@ -41,9 +41,9 @@ int main(int argc, char **argv)
 
 
     double a = 0, b = 0, c = 0;
-    exit_flag = reading_cooficients_from_terminal(&a, &b, &c);
-
+    exit_flag = reading_coeficients_from_terminal(&a, &b, &c);
     if (exit_flag) return 1;
+
 
 
     double x1 = 0, x2 = 0;
@@ -70,13 +70,13 @@ int main(int argc, char **argv)
 //! @return bool True if read is reading is successfully.
 //!
 //!
-bool reading_cooficients_from_terminal(double* a, double* b, double* c)
+bool reading_coeficients_from_terminal(double* a, double* b, double* c)
 {
 
     while (scanf("%lg %lg %lg", a, b, c) != 3)
     {
         printf("Wrong input! Try again!\n");
-        printf("Write down coeficients in format a b c:\n");
+        printf("Write down coefficients in format a b c:\n");
 
         clean_reading_boofer();
     }
@@ -140,7 +140,7 @@ void print_answer(int roots_n, double x1, double x2)
     switch (roots_n)
     {
         case 0: change_consol_color(COLOR_RED);
-                printf("There is no roots!");
+                printf("There are no roots!");
                 break;
         case 1: change_consol_color(COLOR_GREEN);
                 printf("There is one root: %lg.", x1);
