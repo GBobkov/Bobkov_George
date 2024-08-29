@@ -26,12 +26,11 @@ static void error_of_test(int out_n_roots, double out_x1, double out_x2,
 
 
 
-//! @brief struct contains tests information
-//! @param  int n_of_test       number of test
-//! @param  double a, b, c      params in equal
-//! @param  int n_roots         amount of roots
-//! @param  double root1, root2 roots (0 without change)
-//! @param
+//! @brief  struct contains tests data
+//! @param  int n_of_test           number of test
+//! @param  double a, b, c          params in equal
+//! @param  int n_roots             amount of roots
+//! @param  double root1, root2     it's roots (root1 = root2 = 0 if it's INF roots or no roots)
 //!
 //!
 struct example_for_test

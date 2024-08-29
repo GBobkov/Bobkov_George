@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <BrowseTracker_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="testing_program.cpp" open="1" top="1" tabpos="4">
-		<Cursor position="880" topLine="31" />
-		<BrowseMarks positions="165,231,880,1754,1844,3058" />
+	<File name="colorful_print.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="32" topLine="0" />
+		<BrowseMarks positions="30,77,169" />
 		<Book_Marks positions="" />
 	</File>
 	<File name="colorful_print.h" open="0" top="0" tabpos="6">
-		<Cursor position="102" topLine="0" />
-		<BrowseMarks positions="198,321" />
+		<Cursor position="460" topLine="7" />
+		<BrowseMarks positions="243,334,380,514" />
 		<Book_Marks positions="0" />
 	</File>
-	<File name="solver_func.cpp" open="1" top="0" tabpos="3">
-		<Cursor position="329" topLine="0" />
+	<File name="solver_func.h" open="0" top="0" tabpos="5">
+		<Cursor position="266" topLine="0" />
+	</File>
+	<File name="testing_program.h" open="0" top="0" tabpos="7">
+		<Cursor position="776" topLine="20" />
+		<BrowseMarks positions="309,509" />
+	</File>
+	<File name="basic_func.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="528" topLine="0" />
+		<BrowseMarks positions="432" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="ProgrammSquareSolver.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="1537" topLine="40" />
+		<BrowseMarks positions="443,517,613,652" />
+		<Book_Marks positions="405,652,225,646,2458" />
+	</File>
+	<File name="solver_func.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="771" topLine="0" />
 		<BrowseMarks positions="508,513" />
 		<Book_Marks positions="" />
 	</File>
-	<File name="ProgrammSquareSolver.cpp" open="1" top="0" tabpos="1">
-		<Cursor position="89" topLine="0" />
-		<BrowseMarks positions="0,223,439,503,567,648,225" />
-		<Book_Marks positions="405,652,225" />
-	</File>
-	<File name="solver_func.h" open="0" top="0" tabpos="5">
-		<Cursor position="87" topLine="0" />
-	</File>
-	<File name="testing_program.h" open="0" top="0" tabpos="7">
-		<Cursor position="166" topLine="0" />
-		<BrowseMarks positions="159" />
-	</File>
-	<File name="basic_func.cpp" open="1" top="0" tabpos="1">
-		<Cursor position="336" topLine="1" />
-		<BrowseMarks positions="438" />
-		<Book_Marks positions="" />
-	</File>
-	<File name="colorful_print.cpp" open="1" top="0" tabpos="2">
-		<Cursor position="209" topLine="0" />
-		<BrowseMarks positions="30,77,169" />
+	<File name="testing_program.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="5047" topLine="98" />
+		<BrowseMarks positions="167,233,882,1799,1889,3058,3436,3540,4366,4427,4598,4831" />
 		<Book_Marks positions="" />
 	</File>
 </BrowseTracker_layout_file>

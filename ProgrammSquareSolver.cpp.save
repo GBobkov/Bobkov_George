@@ -63,6 +63,13 @@ int main(int argc, char **argv)
 
 
 
+//! @brief func which write number from user to pointer (input should be correct)
+//! @param a[in] double*  first coefficient in square equation
+//! @param b[in] double*  second coefficient in square equation
+//! @param c[in] double*  third coefficient in square equation
+//! @return bool True if read is reading is successfully.
+//!
+//!
 bool reading_cooficients_from_terminal(double* a, double* b, double* c)
 {
 
@@ -79,6 +86,13 @@ bool reading_cooficients_from_terminal(double* a, double* b, double* c)
 
 
 
+//! @brief 
+//!
+//! @param arg_count int
+//! @param arg_vector char**
+//! @return bool
+//!
+//!
 bool user_command(int arg_count, char** arg_vector)
 {
     if (arg_count >= 2)
@@ -98,7 +112,7 @@ bool user_command(int arg_count, char** arg_vector)
             change_consol_color(COLOR_WHITE);
         }
         else
-        {
+         {
             change_consol_color(COLOR_RED);
             printf("Unsupportable command! Exit.");
             change_consol_color(COLOR_WHITE);
@@ -113,6 +127,14 @@ bool user_command(int arg_count, char** arg_vector)
 
 
 
+//! @brief 
+//!
+//! @param roots_n int
+//! @param x1 double
+//! @param x2 double
+//! @return void
+//!
+//!
 void print_answer(int roots_n, double x1, double x2)
 {
     switch (roots_n)

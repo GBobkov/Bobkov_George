@@ -2,29 +2,30 @@
 1724421686 source:c:\users\bobko\projects codeblock\squaresolverproject\colorful_print.cpp
 	"colorful_print.h"
 
-1724403894 c:\users\bobko\projects codeblock\squaresolverproject\colorful_print.h
+1724675108 c:\users\bobko\projects codeblock\squaresolverproject\colorful_print.h
 	<windows.h>
 	<stdio.h>
 
-1724669710 source:c:\users\bobko\projects codeblock\squaresolverproject\programmsquaresolver.cpp
+1724916114 source:c:\users\bobko\projects codeblock\squaresolverproject\programmsquaresolver.cpp
 	<stdlib.h>
 	<stdio.h>
 	<string.h>
-	"my_assert.h"
+	"assert.h"
 	<math.h>
 	"testing_program.h"
 	"solver_func.h"
 	"basic_func.h"
 	"colorful_print.h"
+	"ProgrammSquareSolver.h"
 
 1724669701 c:\users\bobko\projects codeblock\squaresolverproject\my_assert.h
 	<stdlib.h>
 
-1724667568 c:\users\bobko\projects codeblock\squaresolverproject\testing_program.h
+1724673937 c:\users\bobko\projects codeblock\squaresolverproject\testing_program.h
 
-1724258802 c:\users\bobko\projects codeblock\squaresolverproject\solver_func.h
+1724673795 c:\users\bobko\projects codeblock\squaresolverproject\solver_func.h
 
-1724668211 c:\users\bobko\projects codeblock\squaresolverproject\basic_func.h
+1724673971 c:\users\bobko\projects codeblock\squaresolverproject\basic_func.h
 
 1724424992 source:c:\users\bobko\projects codeblock\squaresolverproject\solver_func.cpp
 	<stdio.h>
@@ -33,7 +34,7 @@
 	"solver_func.h"
 	"basic_func.h"
 
-1724668852 source:c:\users\bobko\projects codeblock\squaresolverproject\testing_program.cpp
+1724676002 source:c:\users\bobko\projects codeblock\squaresolverproject\testing_program.cpp
 	<stdio.h>
 	<stdlib.h>
 	"testing_program.h"
@@ -45,4 +46,6 @@
 	<math.h>
 	<stdio.h>
 	"basic_func.h"
+
+1724673704 c:\users\bobko\projects codeblock\squaresolverproject\programmsquaresolver.h
 

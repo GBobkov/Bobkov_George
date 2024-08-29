@@ -1,7 +1,9 @@
 .PHONY: all Release Debug  сlean doxygen
 
 all: ProgrammSquareSolver.exe
+
 Release: run_dir/SquareSolverProject.exe
+
 Debug: run_dir/SquareSolverProject.exe
 
 сlean:

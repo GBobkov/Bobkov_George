@@ -3,7 +3,6 @@
 	<FileVersion major="1" minor="6" />
 	<Project>
 		<Option title="SquareSolverProject" />
-		<Option makefile_is_custom="1" />
 		<Option pch_mode="2" />
 		<Option compiler="not_for_projects__mingw_gcc__strict__fast__save_requires_git" />
 		<Build>

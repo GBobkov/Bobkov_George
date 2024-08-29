@@ -26,12 +26,11 @@ static void error_of_test(int out_n_roots, double out_x1, double out_x2,
 
 
 
-//! @brief struct contains tests information
+//! @brief  struct contains tests data
 //! @param  int n_of_test       number of test
 //! @param  double a, b, c      params in equal
 //! @param  int n_roots         amount of roots
 //! @param  double root1, root2 roots (0 without change)
-//! @param
 //!
 //!
 struct example_for_test
@@ -168,8 +167,8 @@ bool reading_coeficients_from_file_to_struct(FILE *ptr_f)
     {
         if (fscanf(ptr_f, "%d %lg %lg %lg %d %lg %lg" ,&n, &a, &b, &c, &r, &x1, &x2) != 7)
         {
-        
-        
+
+
             int sym = getc(ptr_f);
             if (sym == EOF)
             {
@@ -192,12 +191,12 @@ bool reading_coeficients_from_file_to_struct(FILE *ptr_f)
         if (last_c == EOF)
         {
             tests[last_test++] = {n, a, b, c, r, x1, x2};
-            
-            
+
+
             fclose(ptr_f);
             return true;
         }
-        
+
 
         if (last_c != '\n') {error_of_reading_file(); return false;}
 
